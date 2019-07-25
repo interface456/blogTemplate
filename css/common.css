@@ -1,0 +1,301 @@
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.8;
+    background: #f5f5f5;
+}
+
+img {
+    display: block;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.container {
+    width: 1210px;
+    max-width: 1210px;
+}
+
+.top-nav {
+    margin: 0;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    border: 0;
+    background: #fff;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1);
+}
+
+.header-logo {
+    padding: 0;
+}
+
+.header .logo {
+    height: 62px;
+    float: none;
+    display: table-cell;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1;
+    vertical-align: middle;
+    transition: all .3s ease-out 0s;
+}
+
+.header .logo img {
+    max-height: 40px;
+}
+
+.header .nav > li > a {
+    padding: 0 14px;
+    color: #333;
+    line-height: 62px;
+    background: none;
+    font-size: .16rem;
+}
+
+.header .nav > li.active > a {
+    color: #4285f4;
+}
+
+.header form.form-inline {
+    margin-top: 12px;
+}
+
+.wrap {
+    padding-top: 62px;
+}
+
+.main {
+    width: 1200px;
+    max-width: 1200px;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow: hidden;
+}
+
+.content {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 860px;
+}
+
+.sidebar {
+    float: right;
+    width: 300px;
+}
+
+.widget {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #FFF;
+}
+
+.widget-title {
+    margin: 0 0 10px;
+    padding: 1px 0 1px 7px;
+    font-size: 16px;
+    font-weight: 400;
+    border-left: 3px solid #4285f4;
+}
+
+.widget-title .widget-title-more {
+    float: right;
+    font-size: 13px;
+    font-weight: 400;
+    color: #999;
+    line-height: 19px;
+}
+
+.widget ul {
+    line-height: 1.6;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget ul .widget-item:before {
+    position: absolute;
+    left: 0;
+    top: 15px;
+    content: "";
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border: 3px solid #ccc;
+    border-radius: 4px;
+}
+
+.widget ul .widget-item {
+    padding: 5px 0 5px 12px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+}
+
+.widget-item .widget-item-title {
+    color: #333;
+    display: block;
+}
+
+.widget-item .widget-item-meta {
+    font-size: 0;
+    color: #999;
+}
+
+.widget-item .time {
+    font-size: 13px;
+}
+
+
+
+@media screen and (max-width: 1219px) {
+
+    .header-logo {
+        padding-left: 0;
+    }
+
+    .wrap {
+        padding-top: 62px;
+    }
+
+    .main {
+        width: 980px;
+        max-width: 980px;
+        position: relative;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow: hidden;
+    }
+
+    .content {
+        width: 690px;
+        overflow: hidden;
+        float: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 960px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar {
+        width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    .header-logo {
+        padding-left: 0;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        max-width: none;
+    }
+
+    .main {
+        position: relative;
+        padding-top: 20px;
+    }
+
+    .wrap {
+        padding-top: 62px;
+    }
+
+    .row {
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    a {
+        color: #4285f4
+    }
+
+    a, a:hover {
+        transition: all .3s ease-out 0s
+    }
+
+    a:hover {
+        color: #4285f4
+    }
+
+    a:active, a:focus {
+        outline: 0
+    }
+
+    .header-logo {
+        padding-left: 15px;
+    }
+
+    .header .logo {
+        height: 50px !important;
+    }
+
+    .header .logo img {
+        max-height: 36px;
+    }
+
+    .wrap {
+        padding: 50px 0 0 0;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+    }
+
+    .main {
+        padding-top: 0;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+}
+
+.footer {
+    padding: 35px 0;
+    color: #5f676f;
+    background: #2d3237;
+    text-align: center;
+}
+
+.footer-col {
+    display: inline-block;
+    font-size: 0;
+    vertical-align: middle;
+}
+
+.footer .copyright {
+    font-size: .12rem;
+}
